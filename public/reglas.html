@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Reglas del Servidor</title>
+  <style>
+    body {
+          .btn-back {
+            position: fixed;
+            top: 24px;
+            left: 24px;
+            background: rgba(10,20,40,0.85);
+            border: none;
+            border-radius: 50%;
+            width: 48px;
+            height: 48px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 10;
+            box-shadow: 0 0 12px #000;
+            cursor: pointer;
+            transition: transform 0.2s, background 0.3s;
+          }
+          .btn-back:hover {
+            background: #c9b37b;
+            transform: scale(1.15) rotate(-8deg);
+          }
+          .btn-back span {
+            font-size: 2rem;
+            color: #c9b37b;
+            transition: color 0.3s;
+          }
+          .btn-back:hover span {
+            color: #181c24;
+          }
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      color: #fff;
+      background: #181c24 url('logo.jpg') no-repeat center center fixed;
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: flex-start;
+    }
+    .reglas-container {
+      background: rgba(10, 20, 40, 0.85);
+      border-radius: 18px;
+      box-shadow: 0 0 32px 8px #000;
+      padding: 2.5rem 2rem;
+      max-width: 700px;
+      margin-top: 4rem;
+      text-align: left;
+    }
+    h1 {
+      text-align: center;
+      color: #c9b37b;
+      font-family: 'Cinzel', serif;
+      margin-bottom: 2rem;
+      text-shadow: 0 0 8px #000;
+    }
+    ul {
+      font-size: 1.15rem;
+      line-height: 1.7;
+      margin-left: 1.2rem;
+    }
+    li {
+      margin-bottom: 1rem;
+    }
+    @media (max-width: 700px) {
+      .reglas-container {
+        max-width: 98vw;
+        padding: 1.2rem 0.5rem;
+      }
+      h1 {
+        font-size: 1.3rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <button class="btn-back" onclick="window.location.href='index.html'">
+    <span>&#8592;</span>
+  </button>
+  <div class="reglas-container">
+    <h1>Reglas del Servidor</h1>
+    <div style="margin-bottom:2rem;white-space:pre-line;font-size:1.05rem;line-height:1.7;">
+     La principal tarea del Equipo de 24/7Cuba_GameR es asegurar que los jugadores van a poder disfrutar en todo momento del potencial que 24/7Cuba_GameR les brinda. Pasamos muchas horas de nuestro tiempo implementando nuevos cambios en las distintas plataformas, resolviendo errores y generalmente ayudando a jugadores que están teniendo algún tipo de dificultad. Lamentablemente, algunas veces nos vemos obligados a tomar acciones disciplinarias contra jugadores que están dañando de algún modo la experiencia de otros, o al propio servidor.
+
+ 
+
+A pesar de que tomar este tipo de medidas nunca es agradable, es necesario adoptarlas contra determinados individuos para poder mantener la calidad del servicio que ofrecemos. Nuestra intención es que 24/7Cuba_GameR constituya un entorno divertido y seguro para todos los jugadores.
+
+ 
+
+Ten en cuenta que las normas aquí descritas no son exhaustivas, son orientativas por lo que pueden existir casos no contemplados anteriormente, y casos en los que decidamos aplicar sanciones distintas a las descritas a continuación por su naturaleza, o sanciones en casos similares de distinta magnitud, por ello 24/7Cuba_GameR se reserva el derecho a evaluar cada caso por separado, y a tomar las acciones y/o sanciones disciplinarias necesarias.
+
+ 
+
+El incumplimiento de las normas anula los privilegios de un jugador normal, y lo mantiene sujeto a investigación no solo de su cuenta sino de cuentas adicionales y hermandades. Jugar, hacer uso del panel de control, hacer uso de la Web y participar en los Foros o usar cualquiera de las plataformas de UtimoWoW, es un privilegio que se puede perder en cualquier momento y no un derecho, por ello 24/7Cuba_GameR se reserva el derecho de admisión.
+
+ 
+
+El desconocimiento de estas normas, no exime de su cumplimiento.
+Estas normas pueden cambiar en cualquier momento y es responsabilidad del usuario mantenerse informado sobre las posibles modificaciones.
+
+ 
+
+ 
+
+Leyenda:
+
+Leve, Media, Grave, Muy grave: Clasificación a seleccionar por el sancionador a discreción.
+
+No indica un orden de actuación, por lo que un caso puede ser directamente considerado Muy grave sin necesidad de pasar por estados anteriores.
+
+ 
+
+Sanciones aplicables:
+
+Advertencia: Por lo general supondrá una advertencia escrita, en ocasiones puede ir acompañada de acciones adicionales, según el caso y la sanción.
+No significa que el jugador tenga que ser advertido en todos los casos, la advertencia es opcional para evitar tener que aplicar sanción.
+Advertencia, kick y cambio de nombre forzado: El jugador es advertido y expulsado temporalmente por unos segundos, cuando el jugador trata de conectar es obligado a cambiar su nombre.
+Muteo de X a X minutos, horas o días: Tiempo que un personaje tendrá deshabilitado el chat como sanción.
+Retirada del robo, y la retirada de... X: Se retira el objeto/oro/hechizo robado o cual fuere su forma de existencia, y en algunos casos se aplican sanciones adicionales (Se aplica a distintas gravedades).
+X... retirada de beneficios y adicionales: Se retiran los beneficios obtenidos por explotación de errores y adicionales como sanción.(Se aplica a distintas gravedades)
+Desertor de... X: El jugador obtiene el debuff Desertor por el tiempo indicado, lo que le impedirá regresar en ese tiempo a los Campos de Batalla.
+Baneo de X a X días: Tiempo que la cuenta del infractor quedara bloqueada sin posibilidad de acceso al juego como sanción.
+Baneo permanente: Bloqueo de la cuenta que perdura en el tiempo como sanción, y que en los casos más graves puede ir acompañado de las demás cuentas relacionadas e IP.
+ 
+
+ 
+
+Desglose de normas:
+
+ 
+
+1 - Pedir beneficios o ayuda a un Moderador, Maestro del Juego o Administrador: Queda prohibido pedir objetos, oro, niveles o cualquier beneficio por ninguno de los medios disponibles, y queda prohibido pedir ayuda por problemas con el juego al Equipo de 24/7Cuba_GameR por lugares que no sean los Foros de la comunidad para ello habilitados, el sistema interno de Tickets o Discord.
+
+Posibles sanciones:
+
+Leve: Advertencia.
+Media: Muteo de 5 a 30 minutos.
+Grave: Muteo de 30 minutos a 7 días.
+Muy grave: Baneo de 1 a 7 días.
+ 
+
+2 - Hacerse pasar por Moderador, Maestro del Juego o Administrador: Queda terminantemente prohibido hacerse pasar o suplantar la identidad de los integrantes del Equipo de 24/7Cuba_GameR.
+
+Posibles sanciones:
+
+Muy grave: Baneo permanente.
+ 
+
+3 - Tráfico de influencias: Queda estrictamente prohibido intentar obtener ventajas o beneficios mediante el aprovechamiento de relaciones personales, amistades o cercanías, ya sea verdaderas o falsas, con algún integrante del Equipo de 24/7Cuba_GameR. Esto incluye cualquier intento de influir en decisiones, obtener privilegios o favorecerse de cualquier manera utilizando supuestas conexiones con miembros del equipo.
+
+Posibles sanciones:
+
+Muy grave: Baneo permanente.
+ 
+
+4 - Evaluar, criticar, especular, difamar o insultar a 24/7Cuba_GameR o cualquiera de los integrantes del Equipo: Quedan prohibido evaluar o criticar las acciones o decisiones tomadas por el Equipo de 24/7Cuba_GameR, así como las especulaciones, difamaciones y/o faltas de respeto hacia 24/7Cuba_GameR o el Equipo de 24/7Cuba_GameR.
+
+Posibles sanciones:
+
+Muy grave: Baneo permanente.
+ 
+
+5 - Cuentas, bienes virtuales en el juego y servicios: Queda terminantemente prohibida la compra-venta, reventa, prestación, intercambios y comercio en general de todo tipo y bajo cualquier concepto (llámese “tráfico off-game”) de cualquier bien virtual, propio o ajeno a su cuenta, existiendo este dentro de los servidores de 24/7Cuba_GameR, dígase cuentas, personajes, ítems de cualquier tipo u oro, plata o cobre. Se exceptúan aquellos comercios permitidos, controlados y normados por el sistema de comercio dentro del juego y exceptuándose también el comercio con PD.
+
+ 
+
+Queda prohibido el comercio, la compra-venta, prestación, reventa e intercambio de todo tipo y bajo cualquier concepto de cualquiera servicios dentro del juego (llámese “servicios in-game”), tales como leveleo de personajes, leveleo de profesión, farmeo de oro, plata, bronce, ítems y/o materiales de cualquier tipo, y en general cualquier servicio que figure un desarrollo automatizado positivo o negativo indistintamente de personajes y sus bienes virtuales, siempre que fuese necesario para brindar este, el uso de la cuenta por parte de usuarios ajenos a la misma.
+
+Cuentas que se demuestren, en una situación donde esta información sea relevante, que han sido vendidas, prestadas, regaladas, compartidas pierden todo derecho a cualquier tipo de asistencia.
+
+ 
+
+En el caso de comercializar con PD, se les recomienda a los usuarios estar atentos y al corriente de la procedencia de los mismos, así como de la identidad de sus dueños. La administración de 24/7Cuba_GameR no se responsabiliza por la sustracción de ítems comprados, intercambiados, vendidos o comercializados en general, de cualquiera manera y bajo cualquier concepto, en las que se involucren PD de procedencia ilegal y/o ilícita. Así como tampoco de repercusiones materiales tangibles o intangibles, personales o públicas, físicas o remotas, virtuales o reales dadas por desacuerdos y/o diferencias que hayan podido surgir antes, durante y después del acuerdo entre usuarios, hermandades, personas físicas o jurídicas.
+
+Posibles sanciones:
+
+Leve: Advertencia.
+Media: Baneo de 1 a 7 días.
+Grave: Baneo de 7 a 15 días.
+Muy grave: Baneo permanente.
+ 
+
+6 - Robo de objetos, ninjeo, apropiación indebida o loteo incorrecto: Queda prohibido abandonar grupo o banda durante el enfrentamiento con un jefe con la finalidad de robar el botín, apropiarse de objetos de un modo no descrito en las normas de loteo en caso de existir, o cualquier otra forma de ninjeo en grupo o banda, seleccionar necesidad en un loteo ordinario por objetos que no corresponden a tu clase, función o rama de talentos, así como cualquier forma de robo de objetos, oro o servicios con pero sin limitarse a comercio.
+
+ 
+
+Será considerado también un ninjeo, aplican a grupo o banda y tendrá carácter retroactivo:
+
+Adquirir un objeto como necesidad para posteriormente realizar cualquier acción que no sea el disfrute del mismo, como por ejemplo: comercio, intercambio, regalo, guardado, toda acción relativa (No aplica a objetos que se ligan al equipar, objetos de misión, consumibles, miscelánea, materiales u objetos comerciables como por ejemplo Saronita primordial).
+Reducir arbitrariamente la tirada de dados de un jugador en el modo maestro despojador. (Si todo el grupo o banda son de la misma hermandad, y tienen reglas de loteo que contemplan este caso, se ignora este punto de la norma.)
+Usar o abusar de una norma de banda o grupo ambigua libre a diversas interpretaciones, para usar las mismas a conveniencia.
+Usar o abusar de una norma de banda o grupo realizando acciones que te eximan de la norma, como por ejemplo guardar objetos en tus bolsas que en una situación normal tendrían que estar equipados, para de este modo formar parte de un loteo, en el que no tendrías oportunidad de lotear si tuvieses ese objeto equipado.
+No usar un beneficio adquirido pese a poder hacerlo para continuar exento de una norma, en una misma banda/grupo o bandas/grupos futuros. (Por ejemplo una Marca de santificación).
+Lotear por objetos BiS sin antes indicarlo en las normas de banda o grupo, incumpliendo las formas de loteo ordinario (Por ejemplo un Pícaro usa Cuero y un Guerreo Placas).
+Ignorar una forma de loteo BiS, estando está dictada en normas de la banda o grupo (Por ejemplo un Guerrero Furia puede lotear como necesidad Guardamuñecas máximos de Toskk).
+Además, todo aquel jugador que sea consciente de este accionar de manera directa o indirecta, y no lo denuncie de forma pública o privada, se expone a ser sancionado con la misma, menor o mayor severidad.
+
+Posibles sanciones:
+
+Sólo para casos de errores/confusiones: Retirada del objeto robado y/o advertencia.
+Robo por modo de loteo Necesidad antes que codicia: Retirada del objeto robado + otro objeto.
+1ra vez: Retirada de los objetos robados + cantidad de objetos robados x3.
+2ra vez: Retirada de los objetos robados + cantidad de objetos robados x6.
+3ta vez: Sanción permanente de la cuenta.
+ 
+
+7 - Normas de loteo: Las normas de loteo de una banda deben ser notificadas en el chat de banda, por el líder de la misma o ayudantes a todos los integrantes, asegurándose de que los mismos las entienden y aceptan antes de que estén ligados a ningún "tiempo de reutilización" (CD). Queda prohibido hacer modificación alguna de estas normas previamente establecidas, sin el consentimiento de todos y cada uno de los integrantes (Aconsejamos tomar fotos con el botón "Impant Pet Sis'', ''Imp Pnt Pet Sis'' o ''Prt Scr Sys Rq" del teclado).
+
+Posibles sanciones:
+
+Sólo para casos de errores/confusiones: Retirada del objeto robado y/o advertencia.
+Robo por modo de loteo Necesidad antes que codicia: Retirada del objeto robado + otro objeto.
+1ra vez: Retirada de los objetos robados + cantidad de objetos robados x3.
+2ra vez: Retirada de los objetos robados + cantidad de objetos robados x6.
+3ta vez: Sanción permanente de la cuenta.
+ 
+
+8 - Bugs/errores/exploits del juego: Queda terminantemente prohibida la explotación de bugs/errores/exploits para obtener un beneficio considerable, causar daño a terceros, o causar problemas de estabilidad, y debe ser inmediatamente reportado mediante los foros de la comunidad (preferentemente) o Discord a los administradores ryuzaki9942 o soytorete si se trata de algo que afecta a la estabilidad o grave.
+
+Posibles sanciones:
+
+Leve: Advertencia para casos que causan daño/perjuicio de consideración.
+Muy grave: Baneo permanente.
+ 
+
+9 - Uso de hacks, bots, multiboxing, script, auto clicker, addons de migración, etc: Queda prohibido el uso de cheats, macros que realizan rotaciones automáticas, hacks u otros ejecutables que interactúen con el normal funcionamiento del juego, así como addons de migración, o cualquier archivo de modificación del cliente o similares que otorguen un beneficio al jugador o terceros. (No aplica a addons de juego ni clientes con texturas)
+
+Posibles sanciones:
+
+Leve: Advertencia (Puede incluir retirada de 3 objetos + retirada de oro + retirada de beneficios).
+Media: Retirada de 6 objetos + retirada de oro + retirada de beneficios + baneo de 1 a 7 días.
+Grave: Retirada de todo el equipo + retirada de oro + retirada de beneficios +  baneo de 7 a 15 días.
+Muy grave: Baneo permanente.
+ 
+
+10 - Texto y color en el chat: Queda prohibido el uso de cualquier addon/programa externo que modifique el texto/color del chat con el cual se envían mensajes (No incluida la configuración por defecto del juego o Addons que solo modifiquen el chat para ti).
+
+Posibles sanciones:
+
+Leve: Advertencia.
+Muy grave: Baneo permanente.
+ 
+
+11 - Canales globales: Cualquier usuario podrá crear un canal privado, pero está prohibida la creación de un canal masivo y el anuncio en un canal público como por ejemplo Posada para que la gente se una.
+
+Posibles sanciones:
+
+Leve: Advertencia + destrucción del canal.
+Media: Baneo de 1 a 7 días + destrucción del canal.
+Grave: Baneo de 7 a 15 días + destrucción del canal.
+Muy grave: Baneo permanente + destrucción del canal.
+ 
+
+12 - Panel de control: Queda prohibido el mal uso de las herramientas disponibles en la web.
+
+Posibles sanciones:
+
+Leve: Advertencia.
+Muy grave: Baneo permanente.
+ 
+
+13 - Spam, publicidad y filtros.
+
+Comprende que eres parte de una comunidad en la cual juegan infinidad de personas, como tú. No es necesario repetir muchas veces lo mismo para captar la atención de los otros, simplemente intenta hacerlo más tentativo. Tal vez quieras ir de mazmorra y necesites un main tank para ello: adórnalo y hazlo más interesante para que alguien lo lea y quiera ayudarte. Molestar a los demás podría suponer que te añadan a su lista de ignorados, escribiendo en el chat del juego /ignore nombre-del-personaje, y en ese caso te estarás perjudicando a ti mismo, ya que estas personas nunca más te leerán y será realmente difícil para ti participar en las mejores bandas.
+
+ 
+
+13.1 - Tratar de saltarse el filtro antispam o hacer publicidad directa de otros servidores, servicios o servidores de Discord (Discord solo aplica a canales públicos).
+
+Posibles sanciones:
+
+Leve: Advertencia.
+Media: Muteo de 5 a 30 minutos.
+Grave: Muteo de 30 minutos a 7 días.
+Muy grave: Baneo permanente.
+ 
+
+13.2 - Decir palabras con contenido sexual saltando el filtro de lenguaje adulto o publicar contenido ilegal.
+
+Posibles sanciones:
+
+Leve: Advertencia.
+Media: Muteo de 5 a 30 minutos.
+Grave: Muteo de 30 minutos a 7 días.
+Muy grave: Baneo permanente.
+ 
+
+14 - Selección de nombres para los personajes/hermandades/grupos de arenas.
+
+Cualquier nombre puede ser bueno. Correcto y educado son dos términos que son difíciles de asociar, así que tal vez te interese dar a tu personaje/hermandad/grupo de arenas un nombre agradable. Uno de los primeros desafíos con los que tendrás que enfrentarte en el servidor es el de proporcionarle a tu personaje un nombre. A pesar de que algunos nombres pueden resultar realmente divertidos, el nombre es algo que no debe escogerse arbitrariamente. La primera impresión que los jugadores tendrán de tu personaje/hermandad/grupo de arenas, estará basada en el nombre escogido, así que es conveniente empezar con buen pie. Los nombres contenidos bajo las categorías listadas a continuación son considerados como altamente inadecuados.
+
+ 
+
+14.1 - Pedofilia.
+
+Posibles sanciones:
+
+Muy grave: Baneo permanente + destrucción de hermandad/grupos de arenas.
+ 
+
+14.2 - Racial/Étnico, Sexo/Violencia, Nacional, Orientación sexual, Obsceno/Vulgar, Acosador o Difamatorio, Religioso o de referencia a Iconos Religiosos, Drogas o Actividades ilegales.
+
+Posibles sanciones:
+
+Leve: Advertencia, kick y cambio de nombre forzado.
+Muy grave: Baneo permanente + destrucción de hermandad/grupos de arenas.
+ 
+
+15 - Insultos, acoso y mal uso del lenguaje.
+
+Las palabras son herramientas, herramientas poderosas. A través de tus viajes por el reino Bennu, tendrás que hacer uso de estas herramientas para alcanzar tus metas, bien sea para encontrar un grupo adecuado para completar una misión, como para conseguir esa preciada daga a la que le has echado el ojo. Cualquiera que se haya golpeado un dedo con un martillo puede saber que las herramientas usadas incorrectamente pueden causar mucho daño. Las palabras no son una excepción. Como se ha detallado anteriormente, el Equipo de 24/7Cuba_GameR se reserva el derecho de evaluar cada caso por separado. Las acciones tomadas pueden ser más leves o más severas, dentro de la misma categoría. Un condicionante importante a la hora de sopesar la gravedad de una infracción, es el número de personas que están expuestas a la ofensa verbal. Las infracciones se evaluarán frente a distintas categorías:
+
+ 
+
+15.1 - Insultos, mal uso del lenguaje o acoso en público: Se considera lenguaje de cara al público cuando se utilizan los canales públicos de cada ciudad o globales como Posada, así como los comandos de "gritar" o "decir". Ya que muchos jugadores pueden leer estos canales, nos tomamos muy seriamente las infracciones cometidas por estas vías.
+
+Posibles sanciones:
+
+Leve: Advertencia.
+Media: Muteo de 5 a 30 minutos.
+Grave: Muteo de 30 minutos a 7 días.
+Muy grave: Baneo de 1 a 15 días.
+ 
+
+15.2 - Insultos, mal uso del lenguaje o acoso en privado: Se considera privado cuando se utilizan los canales globales con contraseña, grupo, banda y susurro. Ya que ningún jugador o muy pocos jugadores pueden leer estos canales, y existen medios de auto-moderación por parte del usuario, salvo en casos de acoso en los que el jugador infractor reincida o use distintos personajes, nos solemos interceder por las infracciones cometidas por estas vías y por lo general queda a criterio del Maestro del Juego interceder o no.
+
+Posibles sanciones:
+
+Leve: Advertencia.
+Media: Muteo de 5 a 30 minutos.
+Grave: Muteo de 30 minutos a 7 días.
+Muy grave: Baneo de 1 a 15 días.
+ 
+
+15.3 - Chat de hermandad: Ya que tu participación en el chat de hermandad es voluntaria, nuestra atención será menor en estos lugares. Solo se tendrán en cuenta los casos de acoso severo (Racial, amenazas a la vida real o información sobre otros servidores).
+
+Posibles sanciones:
+
+Leve: Advertencia.
+Media: Muteo de 5 a 30 minutos.
+Grave: Muteo de 30 minutos a 7 días.
+Muy grave: Baneo de 1 a 15 días.
+ 
+
+15.4 - Insultos, acoso u otros a jugadores por realizar compras de PD o colaborar con 24/7Cuba_GameR: Cuando un jugador realiza una compra de PD o colaboración de algún tipo con la comunidad, la reacción de todos jugadores debería ser de agradecimiento, ya que es gracias a estas personas que 24/7Cuba_GameR continúa en funcionamiento. Estos jugadores no están exentos de las normas, pero tampoco lo están los que usan palabras contra ellos como por ejemplo pero sin limitarse a: Doner, Donette, Chupamedias, Pelota o referencias frases del tipo: "compraste X objeto y yo lo conseguí", "compraste X objeto porque eres manco", ''A ti te ayudan los MJ", etc.
+
+Posibles sanciones:
+
+Leve: Advertencia.
+Media: Muteo de 5 a 30 minutos.
+Grave: Muteo de 30 minutos a 7 días.
+Muy grave: Baneo de 1 a 15 días.
+ 
+
+15.5 - Faltas de respeto a las personas: Como es lógico todos somos humanos y podemos cometer errores, no obstante esto no da ningún derecho a nadie a reprochar un desliz de forma grosera y/o irrespetuosa. La educación y amabilidad abren muchas puertas.
+
+Posibles sanciones:
+
+Leve: Advertencia.
+Media: Muteo de 5 a 30 minutos.
+Grave: Muteo de 30 minutos a 7 días.
+Muy grave: Baneo de 1 a 15 días.
+ 
+
+15.6 - Difamaciones: Está claro que a nadie le gusta que le pongan verde a las espaldas, y mucho menos que le acusen de algo que no ha hecho, además, nuestro Equipo es el único encargado de impartir justicia conforme a estas normas. Salvo que tengas una prueba visual de lo que dices, no te dediques a difamar a nadie, y en el caso de que tu acusación recaiga en que alguien incumpliese una norma aquí indicada, limítate a realizar una denuncia. No importa si es jugador o hermandad, es algo que está mal.
+
+Posibles sanciones:
+
+Leve: Advertencia.
+Media: Muteo de 5 a 30 minutos.
+Grave: Muteo de 30 minutos a 7 días.
+Muy grave: Baneo de 1 a 15 días.
+ 
+
+16 - Normas del JcJ (PvP) y Eventos de ataque a ciudades.
+
+Las evidencia de batallas épicas se puede encontrar a lo largo de la historia del servidor, pero jamás ha habido una amenaza de guerra abierta tan clara. Las espadas chocarán y la sangre correrá, pero como en cualquier conflicto, se debe seguir ciertas normas de combate, incluso en el fragor de la batalla. Comprender estas normas te permitirá determinar qué tácticas utilizar a la hora de enfrentarte a tus enemigos. Las siguientes pautas son la base del código de conducta que esperamos que los jugadores sigan a la hora de combatir contra jugadores de su facción o de la contraria. Estas pautas intentan cubrir todas las situaciones que pueden ocurrir en el combate JcJ (Jugador contra Jugador). Sin embargo, no son exhaustivas y es seguro que hay situaciones que no se describen aquí.
+
+ 
+
+16.1 - Acoso continuado: Las normas sobre acoso continuado no se aplican en el reino Bennu cuando existe una resolución JcJ. Los personajes tienen la posibilidad de resolver sus conflictos combatiendo o escapando.
+
+16.2 - Acciones poco honorables: Las acciones que típicamente se considerarían "acciones poco honorables" son consideradas parte de la mecánica JcJ y no se consideran acoso.
+
+16.3 - Las normas que gobiernan la decencia general siguen vigentes: Acciones como nombres inapropiados, lenguaje obsceno o hacer "spam" serán tratadas según se dictamina en nuestras normas actuales indicadas más arriba.
+
+16.4 - Ausentarse en el Campo de Batalla: Queda prohibido quedarse ausente (AUS/AFK) o no participar en un campo de batalla.
+
+Posibles sanciones:
+
+Leve: Advertencia.
+Media: Desertor de 30 minutos a 24 horas.
+Grave: Desertor/Baneo de 1 a 7 días y/o retirada de ítems obtenidos por puntos de honor.
+Muy grave: Desertor/Baneo  de 7 a 30 días y/o retirada de ítems obtenidos por puntos de honor.
+ 
+
+16.5 - Matchmaking Rating: Invitar en varias ocasiones a personajes con Matchmaking Rating (en adelante MMR) bajos a un equipo de arenas con MMR alto para ser capaz de hacer cola y luchar sólo contra equipos con MMR bajos, o cualquier manipulación anormal del MMR, se considera un abuso del mismo y está terminantemente prohibido.
+
+Posibles sanciones:
+
+Grave: Retirada de objetos JcJ y borrado del equipo de arenas.
+Muy grave: Baneo permanente.
+ 
+16.6 - WinTrade: Queda prohibido el farmeo de arenas ("mamutear" o "wintrade") en las distintas modalidades.
+
+Definición: El wintrade (también conocido como "win trading") implica que dos o más jugadores o grupos de jugadores conspiran entre sí para manipular los resultados de las arenas a fin de obtener beneficios indebidos, arreglando de ante mano el resultado.
+
+Posibles sanciones:
+
+Grave: Retirada de objetos JcJ y borrado del equipo de arenas.
+Muy grave: Baneo permanente.
+ 
+16.7 - Conducta antideportiva: Queda prohibido hacer stream sniping, causar la muerte de los integrantes de una banda a propósito, formar banda con jugadores de ambas facciones para atacar ciudades o realizar enfrentamientos en el mundo abierto, o cualquier acción que cause un beneficio o perjuicio desleal en comparación con el resto. Entendemos que el reino es Crossfaction, y ello implica que ambas facciones puedan disfrutar juntas de gran parte del contenido, pero por ejemplo, llevar sanadores de la Alianza para atacar Ventormenta, o sanadores de la Horda para atacar Orgrimmar, es un comportamiento antideportivo, ya que estás impidiendo al resto de jugadores de la ciudad que desean defender a su facción, mermar las intenciones de dicha banda y frustrar el ataque.
+
+ 
+
+Esta norma incluye cualquier forma de antideportividad.
+
+Posibles sanciones:
+
+Leve: Advertencia, y si el jugador es encontrado online en pleno acto antideportivo, podrá ser transportado a una ubicación diferente.
+Media: Baneo de 1 día.
+Grave: Baneo de 1 a 7 días.
+Muy grave: Baneo de 7 a 15 días.
+ 
+
+17 - Denuncias falsas, provocadas o mal intencionadas: Cualquier denuncia realizada con la intención de crear un escenario ficticio o manipulado para provocar la sanción de un jugador.
+
+Posibles sanciones:
+
+Leve: Advertencia.
+Media: Baneo de 1 a 7 días.
+Grave: Baneo de 7 a 15 días.
+Muy grave: Baneo permanente.
+ 
+
+18 - Uso de los canales.
+
+A continuación se muestra una lista en la cual se especifica el uso de cada canal:
+
+18.1 · General-Ciudad: Para charla común y buscar grupo o banda.
+
+18.2 · Comercio-Ciudad: Para comprar, vender, o intercambiar. También para buscar profesionales de oficio.
+
+18.3 · General-Zona: Para charla común y buscar grupo o banda.
+
+18.4 · Defensa local-Ciudad: Para informar de invasiones, etc.
+
+18.5 · Posada: Para todos los anteriores.
+
+ 
+
+ 
+
+Por último, os dejamos aquí algunos consejos para evitar timos estafas y/o robos.
+
+El Equipo de 24/7Cuba_GameR, no se responsabiliza de la pérdida o problemas en la cuenta, si el causante es un descuido o desprotección de los datos de la misma. A continuación, exponemos términos que te ayudarán a "proteger" tu cuenta de las personas con intenciones maliciosas.
+
+ 
+
+C.1 - Nunca comercies entregando tus objetos, oro, etc.. a personas en las que no confíes: No hay ninguna razón para dar tus posesiones de valor a jugadores desconocidos. Acciones como aplicar encantamientos a sus objetos, pueden ser realizadas en la ventana de comercio segura, con un riesgo mínimo para quien las realiza. Al poner un objeto en la casilla "No será comerciado" permitirá a otros jugadores encantar objetos, o aplicar otros efectos a un objeto sin riesgo de perder su propiedad. Sé cauteloso y presta la máxima atención cuando alguien te sugiera algún tipo de acuerdo que requiera confianza.
+
+ 
+
+C.2 - Atención compradores en el juego: Muchos timadores intentarán usar las casas de subastas como sus herramientas de comercio. Sé cuidadoso con los objetos que decidas comprar y los costes asociados con cada objeto. Confirma siempre el coste del objeto antes de pujar o comprar. En una transacción de jugador a jugador, confirma el objeto que estás intercambiando o comprando antes de aceptar el acuerdo.
+
+ 
+
+C.3 - El Equipo de 24/7Cuba_GameR NUNCA te pedirá objetos, oro o datos personales: Es importante que sepas, que un miembro del Equipo de 24/7Cuba_GameR, jamás te pedirá tu nombre de usuario ó contraseña, tampoco te pedirá objetos, oro u otras posesiones. Todos los miembros de nuestro equipo, tienen acceso a una base de datos en la cual puede consultar tus personajes, así como tus datos sin tener que pedírtelos, ellos nunca podrán conocer tu contraseña, ya que se encuentra encriptada (NUNCA se la des voluntariamente o bajo petición).
+
+ 
+
+C.4 - Las amistades no siempre son fructuosas: La confianza no debería ser dada, sino ganada. Al unirse a un grupo o hermandad, estará gobernado por reglas de otro jugador. Es elección tuya el quedarte en una hermandad o grupo si no estás de acuerdo con sus métodos y prácticas.
+
+ 
+
+C.5 - Guarda en secreto la información de tu cuenta: Compartir cuentas va en contra de nuestras normas y términos de uso. Normalmente, los timos y los "hackeos" pueden ser consecuencia de haber compartido estos datos. A pesar de poder desarrollar una fuerte amistad con otros jugadores, cada vez que compartas tus datos de cuenta con otra persona, la seguridad de la misma resulta seriamente comprometida.
+
+ 
+
+C.6 - Realiza tus compras en nuestra web: En ocasiones, encontrarás personas que venden por dinero real, PD, servicios de leveling, ventas de objetos, servicios de subida de profesión, venta de cuentas y/o personajes etc, tienes que saber que en la mayoría de los casos, los compradores y en ocasiones los vendedores terminan siendo víctimas de una estafa, o se ven envueltos en vulneraciones severas de su privacidad o seguridad, o investigaciones del Equipo de 24/7Cuba_GameR, ya que este tipo de compra/venta es ilegal, por ello, para evitar sanciones, aconsejamos adquirir servicios única y exclusivamente de nuestra web.
+ 
+
+ 
+
+Tener una cuenta en cualquiera de los servicios de 24/7Cuba_GameR, supone que aceptas todas las normas de la comunidad así como sus términos de uso.
+
+Creemos conveniente, que todas las cuentas que tienen más de 3 sanciones graves o muy graves, son personas que no son capaces de seguir las normas, y no son conscientes de que las actividades que realizan son ilegales o molestas. Una vez que una cuenta alcanza el límite de tres sanciones, la cuenta podrá ser bloqueada de forma definitiva.
+
+ 
+
+Si ves o conoces a un jugador que infringe nuestras normas, infórmanos, podrás recibir una recompensa si se trata de un caso muy grave, y estarás contribuyendo a tener una comunidad libre de tramposos, bugeros, estafadores, timadores, scamers, impersonators, personas alejadas de un comportamiento civilizado, y en definitiva jugadores con una alta incomprensión de las normas.
+    </div>
+    <ul>
+      <li>Respeta a todos los jugadores y al staff.</li>
+      <li>No se permite el uso de hacks, cheats o exploits.</li>
+      <li>Prohibido el spam y la publicidad de otros servidores.</li>
+      <li>El uso de lenguaje ofensivo o discriminatorio está sancionado.</li>
+      <li>No se permite el comercio de cuentas o personajes.</li>
+      <li>Reporta bugs y problemas al staff para mejorar la experiencia.</li>
+      <li>Las decisiones del staff son finales y deben respetarse.</li>
+      <li>Lee y cumple las normas específicas de cada evento o actividad.</li>
+    </ul>
+  </div>
+</body>
+</html>
