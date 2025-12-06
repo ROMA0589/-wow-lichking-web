@@ -13,6 +13,10 @@ function App() {
   const [regEmail, setRegEmail] = useState('');
   const [regError, setRegError] = useState('');
 
+  // Instrucciones para login:
+  // - username y password son obligatorios
+  // - Se envían por POST a la API
+  // - Se muestra el resultado (éxito o error)
   const handleLogin = async (e) => {
     e.preventDefault();
     setError('');
@@ -20,13 +24,31 @@ function App() {
       setError('Completa ambos campos.');
       return;
     }
-    // Aquí iría la lógica de conexión al servidor/API
-    alert('Login enviado (conexión a servidor pendiente)');
+    try {
+      const res = await fetch('http://108.181.172.10/api/azerothcore.php?action=login', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: `username=${encodeURIComponent(username)}&password=${encodeURIComponent(password)}`
+      });
+      const data = await res.json();
+      if (data.success) {
+        alert('Login exitoso');
+        // Aquí puedes guardar el usuario en el estado/contexto
+      } else {
+        setError(data.error || 'Error de login');
+      }
+    } catch (err) {
+      setError('Error de conexión con el servidor');
+    }
     setShowLogin(false);
     setUsername('');
     setPassword('');
   };
 
+  // Instrucciones para registro:
+  // - username, password y email son obligatorios
+  // - Se envían por POST a la API
+  // - Se muestra el resultado (éxito o error)
   const handleRegister = async (e) => {
     e.preventDefault();
     setRegError('');
@@ -34,8 +56,22 @@ function App() {
       setRegError('Completa todos los campos.');
       return;
     }
-    // Aquí iría la lógica de conexión al servidor/API
-    alert('Registro enviado (conexión a servidor pendiente)');
+    try {
+      const res = await fetch('http://108.181.172.10/api/azerothcore.php?action=register', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/x-www-form-urlencoded' },
+        body: `username=${encodeURIComponent(regUser)}&password=${encodeURIComponent(regPass)}&email=${encodeURIComponent(regEmail)}`
+      });
+      const data = await res.json();
+      if (data.success) {
+        alert('Registro exitoso');
+        // Aquí puedes guardar el usuario en el estado/contexto
+      } else {
+        setRegError(data.error || 'Error de registro');
+      }
+    } catch (err) {
+      setRegError('Error de conexión con el servidor');
+    }
     setShowRegister(false);
     setRegUser('');
     setRegPass('');
