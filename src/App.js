@@ -8,10 +8,12 @@ function App() {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
+  const [loginSuccess, setLoginSuccess] = useState('');
   const [regUser, setRegUser] = useState('');
   const [regPass, setRegPass] = useState('');
   const [regEmail, setRegEmail] = useState('');
   const [regError, setRegError] = useState('');
+  const [regSuccess, setRegSuccess] = useState('');
 
   // Instrucciones para login:
   // - username y password son obligatorios
@@ -20,6 +22,7 @@ function App() {
   const handleLogin = async (e) => {
     e.preventDefault();
     setError('');
+    setLoginSuccess('');
     if (!username || !password) {
       setError('Completa ambos campos.');
       return;
@@ -32,7 +35,13 @@ function App() {
       });
       const data = await res.json();
       if (data.success) {
-        alert('Login exitoso');
+        setLoginSuccess('Login exitoso');
+        setTimeout(() => {
+          setShowLogin(false);
+          setLoginSuccess('');
+          setUsername('');
+          setPassword('');
+        }, 1200);
         // Aquí puedes guardar el usuario en el estado/contexto
       } else {
         setError(data.error || 'Error de login');
@@ -40,9 +49,6 @@ function App() {
     } catch (err) {
       setError('Error de conexión con el servidor');
     }
-    setShowLogin(false);
-    setUsername('');
-    setPassword('');
   };
 
   // Instrucciones para registro:
@@ -52,6 +58,7 @@ function App() {
   const handleRegister = async (e) => {
     e.preventDefault();
     setRegError('');
+    setRegSuccess('');
     if (!regUser || !regPass || !regEmail) {
       setRegError('Completa todos los campos.');
       return;
@@ -64,7 +71,14 @@ function App() {
       });
       const data = await res.json();
       if (data.success) {
-        alert('Registro exitoso');
+        setRegSuccess('Registro exitoso');
+        setTimeout(() => {
+          setShowRegister(false);
+          setRegSuccess('');
+          setRegUser('');
+          setRegPass('');
+          setRegEmail('');
+        }, 1200);
         // Aquí puedes guardar el usuario en el estado/contexto
       } else {
         setRegError(data.error || 'Error de registro');
@@ -72,10 +86,6 @@ function App() {
     } catch (err) {
       setRegError('Error de conexión con el servidor');
     }
-    setShowRegister(false);
-    setRegUser('');
-    setRegPass('');
-    setRegEmail('');
   };
 
   return (
@@ -117,6 +127,7 @@ function App() {
                       className="wow-input"
                     />
                     {regError && <div className="wow-error">{regError}</div>}
+                    {regSuccess && <div className="wow-success">{regSuccess}</div>}
                     <button type="submit" className="wow-btn-modal">Crear cuenta</button>
                     <button type="button" className="wow-btn-modal-cancel" onClick={() => setShowRegister(false)}>Cerrar</button>
                   </form>
@@ -145,6 +156,7 @@ function App() {
                 className="wow-input"
               />
               {error && <div className="wow-error">{error}</div>}
+              {loginSuccess && <div className="wow-success">{loginSuccess}</div>}
               <button type="submit" className="wow-btn-modal">Entrar</button>
               <button type="button" className="wow-btn-modal-cancel" onClick={() => setShowLogin(false)}>Cerrar</button>
             </form>
